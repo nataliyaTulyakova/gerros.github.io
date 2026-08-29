@@ -1,0 +1,30 @@
+.navbar {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 10px;
+  text-shadow: 1px 1px 2px var(--quaternary-color);
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin:auto;
+
+}
+
+.nav-item_link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.nav-item_link:hover {
+  color: var(--septenary-color);
+  transition: transform 0.3s ease;
+ 
+}
+
+

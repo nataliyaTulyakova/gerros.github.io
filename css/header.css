@@ -1,0 +1,11 @@
+ .header {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        text-align: center;
+        color: green;
+      }
+.header h1 {
+        color: var(--primary-color);
+        font-size: 2.5em;
+        margin: 0;
+      }
