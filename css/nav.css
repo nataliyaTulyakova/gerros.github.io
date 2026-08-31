@@ -11,20 +11,15 @@
   padding: 0;
   display: flex;
 }
-
-.nav-item {
-  margin:auto;
-
+.nav-links li {
+  margin: auto;
 }
-
-.nav-item_link {
+.nav-links li a {
   color: var(--secondary-color);
   text-decoration: none;
 }
-.nav-item_link:hover {
+.nav-links li a:hover {
   color: var(--septenary-color);
   transition: transform 0.3s ease;
- 
 }
-
 

@@ -1,7 +1,21 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
+  background: linear-gradient(
+    to right,
+    #d9f7d6 5%,
+    #a8e6a8 17%,
+    #70c970 40%,
+    #3b963b 85%,
+    #176617 95%
+  );
+
   --primary-color: #2c3e50;
   --secondary-color: #ecf0f1dc;
   --tertiary-color: #3498db;
@@ -9,15 +23,81 @@ body {
   --quinary-color: #f1c40f;
   --senary-color: #26b87b;
   --septenary-color: #e74c3c;
+  --additional-color: hotpink;
 
+}
+
+h1{
+  font-size: 1.45rem;
 }
 #main {
   color: #e60202;
   padding: 20px;
 }
+.outer_span{
+  font-size: 1.6em;
+}
+.inner_span{
+  font-size: 2.56em;
+}
+body strong{
+  font-size: 1.6em;
+}
+body strong strong{
+  font-size: 1em; 
+}
+
 h1, h2, h3 {
+  font-weight:700;
   color: dimgray;
 }
 .h2{
+  font-size: 1.3rem
   color:darkred;
+}
+.list-unstyled{
+  list-style: none;
+}
+.negative{
+  background: linear-gradient(
+    to left,
+    #e0fef1 -50%,
+    #7dd3fc -10%,
+    #0284c7 0%,
+    #1e40af 100%,
+    #0f172a 150%
+  );
+}
+.percents{
+background: linear-gradient(
+  to bottom,
+  #dcfce7 2em,
+  #86efac 4em,
+  #4ade80 8em,
+  #22c55e 16em,
+  #16a34a 32em,
+  #15803d 64em,
+  #052e16 128em
+);
+}
+.radial{
+  background:
+  radial-gradient(ellipse at top, orange, transparent),
+  radial-gradient(ellipse at bottom, red, transparent)
+}
+.body_gallery{
+  font-size: 1.4rem;
+  background-image: url(../img/femida.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+}
+
+.h1_gallery{
+  font-size: 2.4rem;
+}
+.footer-social{
+margin: 0;
 }
