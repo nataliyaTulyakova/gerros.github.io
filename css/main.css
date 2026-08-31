@@ -34,16 +34,16 @@ h1{
   color: #e60202;
   padding: 20px;
 }
-.outer_span{
+span{
   font-size: 1.6em;
 }
-.inner_span{
+span span{
   font-size: 2.56em;
 }
-body strong{
+strong{
   font-size: 1.6em;
 }
-body strong strong{
+strong strong{
   font-size: 1em; 
 }
 
