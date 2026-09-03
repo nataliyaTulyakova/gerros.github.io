@@ -34,25 +34,26 @@ h1{
   color: #e60202;
   padding: 20px;
 }
+div{
+font-size: 1.6em;
+}
 span{
-  font-size: 1.6em;
+font-size: 1.6em;
 }
-span span{
-  font-size: 2.56em;
-}
+
 strong{
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
-strong strong{
+/* strong strong{
   font-size: 1em; 
-}
+} */
 
 h1, h2, h3 {
   font-weight:700;
   color: dimgray;
 }
 .h2{
-  font-size: 1.3rem
+  font-size: 1.3rem;
   color:darkred;
 }
 .list-unstyled{
@@ -85,6 +86,30 @@ background: linear-gradient(
   radial-gradient(ellipse at top, orange, transparent),
   radial-gradient(ellipse at bottom, red, transparent)
 }
+
+.homework{
+  background: linear-gradient(
+    to right,
+    #fef3c7 5%,
+    #fde68a 17%,
+    #fcd34d 40%,
+    #fbbf24 85%,
+    #b45309 95%
+  );
+  padding: 3px;
+  margin: 1em 0 2em;
+  border: 5px solid tomato;
+}
+.homework a{
+  text-decoration: none;
+  color: #1e3a8a;
+  font-size: 1.4rem;
+}
+.homework a:hover{
+  color: darkred;
+  text-decoration: underline;
+}
+
 .body_gallery{
   font-size: 1.4rem;
   background-image: url(../img/femida.jpg);

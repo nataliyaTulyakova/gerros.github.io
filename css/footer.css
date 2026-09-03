@@ -18,6 +18,7 @@
 .footer_div-resources,
 .footer_div-contact 
  {
+  font-size: 1rem;
   background-color: var(--secondary-color);
   color: var(--quaternary-color);
   padding: 10px;
@@ -26,6 +27,7 @@
   
   }
 .footer_div-useful-links {
+  font-size: 0.95rem;
   background-color: var(--primary-color);
   color: var(--quaternary-color);
   padding: 10px;
