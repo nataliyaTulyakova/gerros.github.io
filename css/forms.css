@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+.login-body { 
+    background: var(--login-background);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;  
+}
+.login-container{
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: var(--quinary-color);
+    box-shadow: 0 4px 6px var(--septenary-color);
+}
+.login-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+.login-title {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.form-group {
+    margin-bottom: 24px;
+}
+.input-wrapper {
+    position: relative;
+}   
+.input-wrapper input {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 5px;
+    font-size: 1rem;   
+    transition: border-color 0.3s ease;
+}
+.input-wrapper input:focus {
+    border-color: var(--quaternary-color);
+    box-shadow: 0 0 8px var(--senary-color);
+    outline: none;
+}
+.error-message {
+    color: rgb(255, 0, 150);
+    font-size: 0.875rem;
+    margin-top: 8px;
+    display:none;
+}
+.input-wrapper label {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    transform: translateY(-50%);
+    padding: 0 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--septenary-color);
+    text-shadow: 1px 1px 2px var(--quaternary-color);
+    transition: all 0.3s ease;
+}
+.radio-group{
+    position: relative;
+    height: 40px;
+}
+.radio-group label{
+    position:absolute;
+    top: 10%;
+}
+
+.radio-group label:first-child{
+    left: 15%;
+}
+.radio-group label:last-child{
+    left: 45%;
+}
+.form-options{
+    height: 40px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login-btn::before{
+    content: "Submit";
+}
+.login-btn:hover {
+    background-color: var(--senary-color);
+    color: var(--septenary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+form:invalid >button {
+    background-color: darkgray;
+}
+form:invalid >button::before {
+    content: "Not Ready";
+}
+.soc-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: solid 2px var(--quaternary-color);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.soc-btn:hover {
+    background-color: var(--senary-color);
+}
+.divider {
+    position: relative;
+    text-align: center;
+    margin: 24px 0;
+}
+.login-span{
+    font-size: 1rem;
+}
