@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .5rem;
+  height: 60%;
+}
+
+.link-list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  padding: .5rem;
+}
+
+.link:hover {
+  background-color: #777;
+}
+
+.link a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ .wrapper, .grow-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    }
+  .item {
+      color: white;
+      width: 100px;
+      flex: 1;
+  }
+   .item-blue {
+      background-color: blue;
+  }
+  .grow-wrapper .item-blue {
+      background-color: blue;
+      flex: 3 1 auto;
+  }
+  .item-green {
+      background-color:green;
+  }
+  .grow-wrapper .item-blue {
+      background-color: blue;
+      flex: 1 1 auto;
+  }
+
+  .item-orange {
+      background-color:orange;  
+  }
+   
+
+  .flexbox {
+  --min: 30ch;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
+.card {
+  flex: 1 1 var(--min);
+  background-color: #eee;
+  padding: 1rem;
+}
