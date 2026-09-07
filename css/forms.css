@@ -1,29 +1,46 @@
 *{
     box-sizing: border-box;
 }
-.login-body { 
+.login-body, .sign-up-body { 
     background: var(--login-background);
     min-height: 100vh;
     padding: 20px;
     line-height: 1.6;  
 }
-.login-container{
+.sign-up-body { 
+    background: var(--sign-up-background);
+}
+.login-container, .sign-up-container {
     max-width: 420px;
     width: 100%;
     margin: 0 auto;
     border-radius: 12px;
+    border-color: var(--form-border-color);
+    color: var(--form-text-color);
     padding: 30px;
     background-color: var(--quinary-color);
     box-shadow: 0 4px 6px var(--septenary-color);
 }
-.login-header {
+.sign-up-container{  
+    background-color: var(--tertiary-color);
+    color: var(--quinary-color);
+    box-shadow: 0 4px 6px var(--quaternary-color);   
+}
+.login-header, .sign-up-header {
     text-align: center;
     margin-bottom: 36px;
 }
-.login-title {
+.login-title, .sign-up-title {
     margin-bottom: 20px;
     color: var(--primary-color);
 }
+.sign-up-title{
+    text-shadow: 1px 1px 2px var(--quinary-color);
+}
+.login-title{
+  text-shadow: 1px 1px 2px var(--senary-color);  
+}
+
 .form-group {
     margin-bottom: 24px;
 }
@@ -57,8 +74,8 @@
     padding: 0 8px;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--septenary-color);
-    text-shadow: 1px 1px 2px var(--quaternary-color);
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--quinary-color);
     transition: all 0.3s ease;
 }
 .radio-group{
@@ -80,7 +97,7 @@
     height: 40px;
 }
 
-.login-btn {
+.submit-btn, .login-btn {
     width: 100%;
     padding: 16px;
     background-color: var(--quaternary-color);
@@ -92,20 +109,21 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.login-btn::before{
-    content: "Submit";
+
+.submit-btn:hover, .login-btn:hover {
+    background-color: var(--quinary-color);
+    color: var(--septenary-color);  
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .login-btn:hover {
     background-color: var(--senary-color);
-    color: var(--septenary-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-
 }
+
 form:invalid >button {
     background-color: darkgray;
 }
 form:invalid >button::before {
-    content: "Not Ready";
+    content: "Not Ready to ";
 }
 .soc-btn {
     width: 100%;

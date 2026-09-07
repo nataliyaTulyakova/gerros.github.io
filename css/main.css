@@ -1,5 +1,5 @@
 :root{
- --primary-color: #2c3e50;
+  --primary-color: #2c3e50;
   --secondary-color: #ecf0f1dc;
   --tertiary-color: #3498db;
   --quaternary-color: hsl(232, 78%, 57%);
@@ -7,13 +7,23 @@
   --senary-color: #26b87b;
   --septenary-color: #e74c3c;
   --additional-color: hotpink;
-  --login-background: linear-gradient(
+  --sign-up-background: linear-gradient(
     135deg,
     #f5f7fa 0%,
     #ecf0f1dc 35%,
     #c3cfe2 55%,
     #2c3e50 95%
   );
+  --login-background:linear-gradient(
+    135deg,
+    #d9f7d6 5%,
+    #a8e6a8 17%,
+    #70c970 40%,
+    #3b963b 85%,
+    #176617 95%
+  );
+  --form-text-color: #333;
+  --form-border-color: #176611;
 }
 body {
   font-family: "Roboto", sans-serif;
