@@ -1,0 +1,28 @@
+ .advertising{
+    grid-area: adv;
+    background-color: #96b8cb;
+    color: aliceblue;
+    border-color: #96b8cb;
+ }
+ .adv-media{
+   display: grid;
+   grid-template-rows: 3fr 1fr;
+   grid-template-areas: "img" "text";
+   gap: 5px;
+   border: 2px solid #f76707;
+   border-radius: 5px;
+   margin: 1vh auto;
+ }
+ .adv-media .adv-img{
+   grid-area: img;
+   background-image: url(/img/musya.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   
+ }
+ .adv-media .adv-text{
+   grid-area: text;
+   padding: 2px;
+   margin: 0;
+   color: blanchedalmond;
+ }

@@ -7,7 +7,7 @@
     background: #fff;
     font-family: Arial, sans-serif;
     padding: 1em;
-    font-size: clamp(16px, calc(9.333px + 1.3889vw), 48px);
+    font-size: clamp(16px, calc(100vw/38.4), 48px);
   }
   .container {
     display: grid;
@@ -23,6 +23,11 @@
     "header header" 
     "sidebar main" 
     "footer footer";
+  }
+}
+@media (min-width: 1920px){
+  body{
+    font-size: 36px;
   }
 }
 

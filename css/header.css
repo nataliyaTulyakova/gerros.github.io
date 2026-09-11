@@ -1,8 +1,9 @@
  .header {
-        background-color: var(--secondary-color);
-        padding: 20px;
+  grid-area: header;
+  border-color: #c9c619;
+        background-color: #e1da8b;
         text-align: center;
-        color: green;
+        color: #0a0903;
       }
 .header h1 {
         color: var(--primary-color);
