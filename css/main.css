@@ -48,7 +48,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  gap: 5px;
+  gap: 10px;
   display: grid;
 }
 .wrapper > * {
@@ -65,7 +65,7 @@ body {
   top: 1px;
 }
 .wrapper {
-  gap: 10px;
+  gap: 1px;
   grid-auto-rows: unset;
   grid-template-areas:
     "header"

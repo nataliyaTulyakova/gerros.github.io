@@ -15,7 +15,7 @@
  }
  .adv-media .adv-img{
    grid-area: img;
-   background-image: url(/img/musya.png);
+   background-image: url(../img/musya.png);
    background-repeat: no-repeat;
    background-size: contain;
    
