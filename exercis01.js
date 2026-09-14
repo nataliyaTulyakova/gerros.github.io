@@ -66,6 +66,8 @@ switch (weekDay) {
     break;
   case "saturday":
   case "субота":
+  case "sunday":
+  case "неділя":
     alert("Weekend");
     break;
   default:
