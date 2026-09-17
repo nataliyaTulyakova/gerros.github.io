@@ -1,0 +1,127 @@
+*{box-sizing: border-box;}
+body{
+    background-color: honeydew;
+}
+h1{
+    text-align: center;
+    background-color: firebrick;
+    color:  burlywood;
+    padding: 10px;
+}
+h2 {
+    background-color: cadetblue;
+    color: lightgoldenrodyellow;
+}
+input{
+     background-color: lemonchiffon;
+     color: darkslategrey;
+     border: 2px solid lavender;
+     border-radius: 5%;
+     padding: 5px;
+     margin: 10px;
+}
+input:hover{
+    background-color: azure;
+}
+label{
+    font-weight: 600;
+    color: saddlebrown;
+}
+.perm-message{
+    padding: 3px;
+    font-weight: 600;
+}
+.calculation{
+    padding: 10px;
+    border: 2px dashed teal;
+    background-color: seashell;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 50vw));
+    grid-auto-rows: minmax(40px,auto);
+    
+}
+.operand1{
+    grid-area: 1 / 1;
+}
+.operand2{
+    grid-area: 1 / 2;
+}
+.result{
+    grid-area: 2 / 1;
+    background: tomato; 
+    color:lightgoldenrodyellow;
+    font-weight: 600;
+    padding: 10px;
+    width: minmax(50vw,auto);
+}
+.reset {
+    grid-area: 2 / 2;
+    background: #fadfdf;
+    padding: 10px;
+}
+.calculation span {
+    background-color: wheat;
+    border: 3px solid darkorange;
+    text-align: center;
+    color: hotpink;
+    font-size: 1.1em;
+    font-weight: 600;
+    
+}
+
+.result-button {
+    background-color: #19a0c9;
+    padding: 0.5em 1em;
+    color: aquamarine;
+    font-size: 1.1em;
+    border: 2px solid goldenrod;
+    border-radius: 10%;
+     box-shadow: 0 0 6px lemonchiffon;
+    
+}
+.result-button:hover{
+    background:  #fadfdf;
+    color: darkmagenta;
+    cursor: pointer;
+}
+.reset-button {  
+    background-color: #560202;
+    padding: 0.5em 1em;
+    color: #fadfdf;
+    font-size: 0.875em;
+    border: 2px solid goldenrod;
+    border-radius: 10%;
+    box-shadow: 0 0 6px lemonchiffon;
+}
+.reset-button:hover {  
+    cursor: pointer;
+    background-color: chocolate;
+    color: lightyellow; 
+}
+.quest{
+    background-color: blanchedalmond;
+    padding: 10px;
+    display: flex;
+}
+.ask-button{
+    background-color: steelblue;
+    border: solid 2px slategray;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    color: lawngreen;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+.ask-button:hover{
+    background-color: darkorange;
+    color: green;
+    cursor: pointer;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: #560202;
+    padding: 0.5em 1em;
+    color: #fadfdf;
+    font-size: 0.875em;
+  }
