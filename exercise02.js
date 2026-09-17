@@ -38,12 +38,12 @@ ageInp.addEventListener("change", function(){
 });
 
 function min (a, b) {
-  if  (a <= b) {
+  if  (Number(a ) <=  Number(b)) {
     return a
   } else return b;
 }
 function min1 (a, b) {
- return (a <= b) ? a : b;
+ return (Number (a) <= Number(b)) ? a : b;
 }
 let numb1 = document.querySelector("#numb1");
 let numb2 = document.querySelector("#numb2");
