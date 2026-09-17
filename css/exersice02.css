@@ -11,6 +11,7 @@ h1{
 h2 {
     background-color: cadetblue;
     color: lightgoldenrodyellow;
+    padding: 10px;
 }
 input{
      background-color: lemonchiffon;
@@ -36,7 +37,7 @@ label{
     border: 2px dashed teal;
     background-color: seashell;
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 50vw));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 50vw));
     grid-auto-rows: minmax(40px,auto);
     
 }
