@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 14</title>
+    <link rel="stylesheet" href="css/exersice02.css"/>
+</head>
+<h1>JavaScript - Exersice 3 </h1>
+
+<script>
+    /* Task 1 */
+    const fruits = ['apple', 'banana', 'cantaloupe', 'blueberries', 'grapefruit'];
+
+    for (const fruit of fruits){
+        console.log (fruit);
+    }
+    
+    let i = 0;
+
+    while (i < fruits.length) {
+        console.log (fruits[i]);
+        i++;
+    }
+
+    let j = 0;
+    do {
+        console.log (fruits[j]);
+        j++; 
+    } while (j < fruits.length);
+
+     /* Task 2 */
+    const Numbs = [1,2,3,4,5,6,7,8,9,10];
+
+    for (let i = 0; i < Numbs.length; i++) {
+        if (Numbs[i] % 2 == 0) {
+            console.log (Numbs[i]);
+        }
+    }
+
+    /* Task 3 */
+    const names = ['Batman'];
+    names.push('Joker');
+    names.unshift('Bane');
+    console.log (`Initial array: ${names}`);
+    if (names.includes('Alfred')) {
+        console.log ("This name already exists")
+    } else {
+        names.push('Alfred');
+    }
+    console.log (`Array with Alfred: ${names}`);
+    const pos = names.indexOf('Batman');
+    if (pos != -1) {
+        names.splice(pos, 1);
+    }
+     console.log (`Array without Batman: ${names}`);
+
+     /* Task 4 */
+    function sumInput(arrayOfNumb){
+        let sum = 0;
+        arrayOfNumb.length = 0;
+        for(;;){
+            let input = prompt("Enter a number:");
+            let numb = Number(input);
+            if ((!input) || isNaN(numb)){
+                break;
+            }
+            arrayOfNumb.push(numb);
+            sum += numb; 
+        }
+        return sum;
+    }
+    let arrayOfNumbs = [];
+    let sumOfEems = sumInput(arrayOfNumbs);
+    console.log (`Input array: ${arrayOfNumbs}, sum of elements: ${sumOfEems}`)
+
+       /* Task 5 */
+    let styles = ["Jazz", "Blues"];
+    styles.push("Rock-n-Roll");
+    console.log (`Styles: ${styles}`);
+    const middle = Math.floor(styles.length / 2);
+    styles[middle] = "Classics";
+    console.log (`Change the middle element in Styles: ${styles}`);
+    let firstStyle = styles.shift();
+    console.log (`Deleted style: ${firstStyle}`);
+    styles.unshift("Rap", "Reggae");
+    console.log (`With new styles: ${styles}`);   
+</script>
+<div>
+    <a class="back-link" href="index.html">Home</a>
+</div>
+</body>
+</html>
