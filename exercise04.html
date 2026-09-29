@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 15</title>
+</head>
+
+<body>
+    <h1>JavaScript - Exersice 4 </h1>
+    <script>
+        /* Task 1 */
+        let user = {
+            name: "Іван",
+            surname: "Сміт"
+
+        }
+
+        console.log(user['name']);
+
+        user.name = "Петро";
+
+        console.log(`Changed name ${user.name}`);
+        delete user.name;
+        console.log(user);
+
+        /* Task 2 */
+        let schedule = {};
+
+        alert(isEmpty(schedule)); // true
+
+        schedule["8:30"] = "Вставай";
+
+        alert(isEmpty(schedule)); // false
+
+        function isEmpty(obj) {
+            if (Object.entries(obj).length == 0) return true;
+            return false;
+        }
+
+        /* Task 3 */
+
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        }
+
+        let salSum = calculateSalariesSum(salaries);
+        alert(`Сумарна заробітна плата ${salSum}`);
+
+        // function calculateSalariesSum(salaries) {
+        //     let sum = 0;
+        //     if (Object.entries(salaries).length == 0) {
+        //         return sum;
+        //     }
+        //     for (let key in salaries) {
+        //         sum += salaries[key];
+        //     }
+        //     return sum;
+        // }
+         function calculateSalariesSum(salaries) {
+            const arrayOfSalaries = Object.values(salaries);
+            let sum = 0;
+            if (arrayOfSalaries.length == 0) {
+                return sum;
+            }
+            arrayOfSalaries.forEach(val => sum += val);
+            return sum;
+        }
+
+        /* Task 4 */
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "Моє меню"
+        };
+
+        console.log("До зміни: ", structuredClone(menu));
+
+        multiplyNumeric(menu);
+
+        console.log("Після зміни: ", menu);
+
+        function multiplyNumeric(obj) {
+            for (const key in obj) {
+                let keyVal = obj[key];
+                if (typeof (keyVal) === "number") {
+                    keyVal *= 2;
+                    obj[key] = keyVal;
+                }
+
+            }
+        }
+
+    </script>
+
+ <a href="index.html">Home</a>
+
+</body>
+
+</html>
