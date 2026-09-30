@@ -1,0 +1,46 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+}
+.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.first {
+    color: red;
+}
+.second {
+    color: blue;
+}
+.third {
+    color: green;
+    background-color: yellow;
+}
+
+.fourth {
+    color: gray;
+    
+}
+.border {
+    border: solid red 1px;
+}
+
+.title {
+    padding: 1rem 2rem;
+    border: double 2px violet;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: gold;
+    padding: 0.5em 1em;
+    color: green;
+    font-size: 0.875em;
+  }
