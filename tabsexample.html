@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs example</title>
+    <link rel="stylesheet" href="css/tabstyle.css" />
+</head>
+
+<body>
+    <div class="tabs-container">
+        <!-- Кнопки керування вкладками -->
+        <div class="tabs-buttons">
+            <button class="tab-btn active" data-tab="tab-1">Програмування</button>
+            <button class="tab-btn" data-tab="tab-2">Дизайн</button>
+            <button class="tab-btn" data-tab="tab-3">Маркетинг</button>
+        </div>
+        <!-- Контент вкладок -->
+        <div class="tabs-content">
+            <div id="tab-1" class="tab-content-item active">
+                <h2>Курси Програмування</h2>
+                <p>Вивчайте JavaScript, Python та побудову сучасних вебдодатків.</p>
+            </div>
+            <div id="tab-2" class="tab-content-item">
+                <h2>Курси Дизайну</h2>
+                <p>Опануйте UI/UX дизайн, роботу з Figma та створення інтерфейсів.</p>
+            </div>
+            <div id="tab-3" class="tab-content-item">
+                <h2>Курси Маркетингу</h2>
+                <p>Навчіться налаштовувати таргетинг, SEO та просувати бренди.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content-item');
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                button.classList.add('active');
+                const targetTabId = button.dataset.tab;
+
+                const targetContent = document.getElementById(targetTabId);
+                targetContent.classList.add('active');
+            })
+        })
+    </script>
+</body>
+
+</html>
