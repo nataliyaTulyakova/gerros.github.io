@@ -37,16 +37,49 @@ btnDanger.addEventListener("focusout", function () {
 const btnDark = document.querySelector(".btn-dark");
 const btnLight = document.querySelector(".btn-light");
 document.body.classList.remove("dark-mode");
-btnLight.addEventListener("click", function(){
+btnLight.addEventListener("click", function () {
     this.style = "display: none;";
     btnDark.style = "display: inline-block;";
-    toggleMode(); 
+    toggleMode();
 });
-btnDark.addEventListener("click", function(){
+btnDark.addEventListener("click", function () {
     this.style = "display: none;";
     btnLight.style = "display: inline-block;";
     toggleMode();
 });
-function toggleMode() {    
+function toggleMode() {
     document.body.classList.toggle("dark-mode");
 }
+const btnInfo = document.querySelector(".btn-info");
+btnInfo.addEventListener("keypress", function (event) {
+    if (event.code == "Enter") {
+        event.preventDefault();
+        elemAlert.classList.add("alert-info");
+        elemAlert.textContent = "A simple info alert—check it out!";
+    }
+});
+
+const cards = document.querySelectorAll(".card");
+cards.forEach(elem => {
+    if (elem.classList.contains('card-title')) {
+        console.log(`елемент з класом "card-title" ${elem.textContent}`);
+    }
+    const elemChildren = elem.querySelectorAll('.card-title');
+    if (elemChildren.length != 0) {
+        elemChildren.forEach(child => {
+            console.log(`вміст елемента з класом "card-title:" ${child.textContent}`);
+        })
+    }
+});
+
+cards.forEach(elem => {
+    const btnAddToCart = elem.querySelector("a.add-to-cart");
+    btnAddToCart.onclick = function () {
+        const elemsCardTitle = elem.querySelectorAll('.card-title');
+        if (elemsCardTitle.length != 0) {
+            elemsCardTitle.forEach(elem => {
+                console.log(elem.textContent);
+            })
+        }
+    }
+});

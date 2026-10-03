@@ -14,3 +14,13 @@ body {
 .hide {
     display: none;
 }
+
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: thistle;
+    padding: 0.5em 1em;
+    color: darkcyan;
+    font-size: 0.875em;
+  }
