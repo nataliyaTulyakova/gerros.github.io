@@ -1,0 +1,104 @@
+.calculator-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: thistle;
+    border-radius: 5px;
+    border: 3px solid teal;
+}
+
+/* .calculator-container>*:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    position: relative;
+    top: 1px;
+} */
+
+.calculator-container h2 {
+    font-weight:700;
+    color: darkslategray;
+    text-align: center;
+}
+.calculator {
+    width: 320px;
+    margin: 50px auto;
+    padding: 1rem;
+    border: 1px solid darkgray;
+    border-radius: 12px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-calculator {
+    margin-bottom: 0.9rem;
+    
+}
+
+.display-calculator input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 2px solid darkslategray; 
+    border-radius: 8px;
+    outline: none;
+    cursor: default;
+    pointer-events: none;
+    background-color: aliceblue;
+    font-size: 1.6rem;
+    text-align: right;
+    grid-column: span 3;
+}
+.display-calculator input:focus{
+    outline: none;
+}
+.culculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px
+}
+
+.culculator-buttons button {
+    min-height: 55px;
+    border: none;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.culculator-buttons button:hover {
+    background-color: lemonchiffon;
+}
+
+.culculator-buttons button:active {
+    transform: scale(0.96);
+}
+
+/*operation buttons */
+
+.culculator-buttons button[data-operation] {
+    background-color: lightgoldenrodyellow;
+}
+
+.culculator-buttons button[data-action="clear"] {
+    background-color: wheat;
+}   
+
+.culculator-buttons button[data-action="calculate"] {
+    grid-column: span 4;
+    background-color: burlywood;
+    font-weight: 600;
+    box-shadow: 0 0 6px goldenrod;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: darksalmon;
+    padding: 0.5em 1em;
+    color: lemonchiffon;
+    font-size: 0.875em;
+  }
