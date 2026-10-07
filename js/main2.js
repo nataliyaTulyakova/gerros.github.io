@@ -37,6 +37,7 @@ btnDanger.addEventListener("focusout", function () {
 const btnDark = document.querySelector(".btn-dark");
 const btnLight = document.querySelector(".btn-light");
 document.body.classList.remove("dark-mode");
+btnLight.style = "display: none;";
 btnLight.addEventListener("click", function () {
     this.style = "display: none;";
     btnDark.style = "display: inline-block;";

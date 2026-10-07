@@ -17,26 +17,35 @@ class Calculator {
         this.result = value;
         return this;
     }
-    add(value1 = this.result, value2) {
-        this.result = value1 + value2;
+    add(value1, value2) {
+        const number2 = value2 ?? value1;
+        const number1 = value2 === undefined ? this.result : value1;
+        this.result = number1 + number2;
         return this;
     }
-    subtract(value1 = this.result, value2) {
-        this.result = value1 - value2;
+    subtract(value1, value2) {
+        const number2 = value2 ?? value1;
+        const number1 = value2 === undefined ? this.result : value1;
+        this.result = number1 - number2;
         return this;
     }
-    multiply(value1 = this.result, value2) {
-        this.result = value1 * value2;
+    multiply(value1, value2) {
+        const number2 = value2 ?? value1;
+        const number1 = value2 === undefined ? this.result : value1;
+        this.result = number1 * number2;
         return this;
     }
-    divide(value1 = this.result, value2) {
-        if (value2 === 0) {
+    divide(value1, value2) {
+        const number2 = value2 ?? value1;
+        const number1 = value2 === undefined ? this.result : value1;
+        if (number2 === 0) {
             console.log("Error! Dividing by zero");
             return this;
         }
-        this.result = value1 / value2;
+        this.result = number1 / number2;
         return this;
     }
+    
     getResult() {
         return this.result;
     }
@@ -104,9 +113,9 @@ class Calculator {
                 console.log("Error! Entered value is not a number");
                 return;
             }
-            if (this.operation !== ""){
+            if (this.operation !== "") {
                 this[this.operation](firstVal, secVal);
-            } 
+            }
             const result = this.getResult();
             this.display.value = result;
             this.displayResult();
@@ -117,7 +126,7 @@ class Calculator {
         }
 
     }
-    displayResult(){
+    displayResult() {
         console.log(`Current result ${this.result}`);
     }
 }
