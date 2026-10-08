@@ -1,0 +1,153 @@
+/* Стилізація фону модального вікна (оверлей) */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+/* Контейнер діалогового вікна */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Шапка модального вікна */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Елементи форми */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Кнопка відправки */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Стиль для полів та кнопок, коли вони в фокусі */
+.form-group input:focus,
+.submit-btn:focus,
+.close-btn:focus,
+.toggle-password:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+    border-color: transparent;
+}
+
+/* Якщо користувач клікає мишкою, outline можна приховати (опціонально) */
+.form-group input:focus:not(:focus-visible),
+.submit-btn:focus:not(:focus-visible) {
+    outline: none;
+    border-color: #007bff;
+    /* залишаємо тільки кольоровий бордер для мишки */
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Опціонально: підсвічування поля червоним, якщо воно невалідне */
+.form-group input:invalid:focus {
+    border-color: #dc3545;
+    outline-color: #dc3545;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+    /* Залишаємо місце для іконки справа */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    line-height: 1;
+    user-select: none;
+    /* Щоб текст іконки не виділявся випадково */
+}
+
+/* Прибираємо стандартний синій контур при кліку на іконку */
+.toggle-password:focus {
+    outline: none;
+}
+
+.eye-open,
+.eye-closed {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+.back-link {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    background-color: #0056b3;
+    padding: 0.5em 1em;
+    color: lemonchiffon;
+    font-size: 0.875em;
+  }
