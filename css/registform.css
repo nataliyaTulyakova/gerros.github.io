@@ -130,14 +130,7 @@ dialog {
     outline: none;
 }
 
-.eye-open,
-.eye-closed {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
+
 
 .hidden {
     display: none;
