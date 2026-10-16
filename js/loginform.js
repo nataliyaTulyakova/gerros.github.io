@@ -131,17 +131,17 @@ validators.confirm = {
 validators.validate = function (element, message, predicate) {
     let errorLabel = document.querySelector("#" + element.dataset.errorLabel);
     errorLabel.innerHTML = message;
-    errorLabel.style.display = "none";
+    errorLabel.style.visibility = "hidden"
     element.classList.remove("valid");
     element.classList.remove("invalid");
-
+   
     if (typeof predicate == "function" && predicate()) {
         element.classList.add("valid");
         return true;
     }
     else {
         element.classList.add("invalid");
-        errorLabel.style.display = "block";
+        errorLabel.style.visibility = "visible";
         return false;
     }
 };

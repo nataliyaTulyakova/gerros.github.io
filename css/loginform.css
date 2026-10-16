@@ -116,17 +116,12 @@ dialog {
 }
 
 .error-message {
-    color: rgb(255, 0, 150);
-    font-size: 0.875rem;
-    margin-top: 8px;
-    display: none;
-}
-
-.error-text {
     color: #dc3545;
     font-size: 0.85rem;
-    margin-top: 5px;
+    margin-top: 8px;
+    min-height: 1.1rem;
     display: block;
+    visibility: hidden;
 }
 
 /* Опціонально: підсвічування поля червоним, якщо воно невалідне */
